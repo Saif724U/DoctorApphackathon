@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.m36.doctorapp.Register"
+    android:background="#D3D3D3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/rel"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Name with Designation"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/namelabel"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+
+        android:id="@+id/Name"
+        android:layout_toRightOf="@+id/namelabel"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/namelabel"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Hospital Name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/hospitallabel"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/HospitalName"
+        android:layout_below="@id/Name"
+        android:layout_toRightOf="@+id/hospitallabel"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/hospitallabel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Hospital Adress"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/hospitaladdresslabel"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/HospitalAddress"
+        android:layout_below="@id/HospitalName"
+        android:layout_toRightOf="@+id/hospitaladdresslabel"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/HospitalAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Verify ID"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/verif"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Verify"
+        android:layout_marginTop="10dp"
+        android:text="Pick Image to verify"
+        android:layout_toRightOf="@+id/verif"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hospitaladdresslabel"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:id="@+id/Register"
+        android:layout_below="@+id/rel"
+        android:layout_centerHorizontal="true"
+        android:text="Register"/>
+</RelativeLayout>
